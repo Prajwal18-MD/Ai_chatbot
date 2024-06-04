@@ -1,0 +1,410 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hello", "Hi", "Hey", "Good morning", "Good evening"],
+        "responses": ["Hello! Welcome to our restaurant.", "Hi there! How can I assist you today?", "Hey! How can I help you?", "Good morning! What can I do for you?", "Good evening! How can I assist?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "Goodbye", "See you later", "Talk to you later"],
+        "responses": ["Goodbye! Have a great day.", "See you later! Enjoy your meal.", "Bye! Come back soon.", "Talk to you later!"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "I appreciate it"],
+        "responses": ["You're welcome!", "No problem!", "My pleasure!", "Anytime!"]
+      },
+      {
+        "tag": "menu",
+        "patterns": ["Can I see the menu?", "Show me the menu", "What's on the menu?", "Menu please", "I'd like to see the menu"],
+        "responses": ["Sure! Here's our menu.", "Of course, here is the menu.", "Absolutely, here is what we offer."]
+      },
+      {
+        "tag": "specials",
+        "patterns": ["Any specials today?", "What are today's specials?", "Do you have any specials?", "Specials please"],
+        "responses": ["Yes, today's specials are...", "Here are today's specials...", "We have some great specials today, including..."]
+      },
+      {
+        "tag": "hours",
+        "patterns": ["What are your hours?", "When are you open?", "Opening hours?", "When do you close?"],
+        "responses": ["We are open from 9 AM to 9 PM every day.", "Our opening hours are 9 AM to 9 PM.", "We close at 9 PM."]
+      },
+      {
+        "tag": "location",
+        "patterns": ["Where are you located?", "Location?", "Address?", "Where can I find you?"],
+        "responses": ["We are located at 123 Main Street.", "Our address is 123 Main Street.", "You can find us at 123 Main Street."]
+      },
+      {
+        "tag": "reservation",
+        "patterns": ["I'd like to make a reservation", "Can I reserve a table?", "Reservation please", "Book a table"],
+        "responses": ["Sure, for what date and time?", "Of course, how many people?", "We can do that, when would you like to come in?"]
+      },
+      {
+        "tag": "order_status",
+        "patterns": ["What's the status of my order?", "Is my order ready?", "Order status?", "How's my order?"],
+        "responses": ["Let me check on that for you.", "I'll find out the status of your order.", "Checking on your order status now."]
+      },
+      {
+        "tag": "vegan_options",
+        "patterns": ["Do you have vegan options?", "Any vegan dishes?", "What vegan food do you have?"],
+        "responses": ["Yes, we have several vegan options including...", "Our vegan dishes include...", "We offer the following vegan meals..."]
+      },
+      {
+        "tag": "gluten_free",
+        "patterns": ["Do you have gluten-free options?", "Any gluten-free dishes?", "What gluten-free food do you have?"],
+        "responses": ["Yes, we have several gluten-free options including...", "Our gluten-free dishes include...", "We offer the following gluten-free meals..."]
+      },
+      {
+        "tag": "allergies",
+        "patterns": ["I have a nut allergy", "Do your dishes contain dairy?", "I am allergic to gluten", "Any peanut-free options?"],
+        "responses": ["We can accommodate allergies, please specify.", "Please let us know your allergy and we will assist.", "We can modify dishes to fit your allergy needs."]
+      },
+      {
+        "tag": "delivery",
+        "patterns": ["Do you offer delivery?", "Can I get this delivered?", "Delivery options?", "Can you deliver to my address?"],
+        "responses": ["Yes, we offer delivery through our website.", "You can place a delivery order online.", "We deliver to your address, just order through our site."]
+      },
+      {
+        "tag": "takeout",
+        "patterns": ["Can I order takeout?", "Do you offer takeout?", "Takeout options?", "Can I pick up my order?"],
+        "responses": ["Yes, we offer takeout. You can place an order online.", "You can order takeout through our website.", "We offer takeout, just order and pick up."]
+      },
+      {
+        "tag": "payment_methods",
+        "patterns": ["What payment methods do you accept?", "Do you take credit cards?", "Can I pay with cash?", "Payment options?"],
+        "responses": ["We accept credit cards, debit cards, and cash.", "You can pay with credit card, debit card, or cash.", "We accept various payment methods."]
+      },
+      {
+        "tag": "feedback",
+        "patterns": ["I'd like to give feedback", "Can I leave a review?", "Where can I give feedback?", "How do I leave a review?"],
+        "responses": ["We'd love to hear your feedback, please leave a review on our website.", "You can give feedback on our site.", "Leave a review through our feedback form."]
+      },
+      {
+        "tag": "chef_special",
+        "patterns": ["What is the chef's special?", "Chef's special today?", "Any chef specials?"],
+        "responses": ["Today's chef's special is...", "Our chef recommends...", "The chef's special for today includes..."]
+      },
+      {
+        "tag": "drinks_menu",
+        "patterns": ["What's on the drinks menu?", "Do you have a drinks menu?", "Show me the drinks menu", "Drink options?"],
+        "responses": ["Here's our drinks menu.", "We have a variety of drinks including...", "Our drinks menu includes..."]
+      },
+      {
+        "tag": "wine_list",
+        "patterns": ["Do you have a wine list?", "Show me the wine list", "Wine options?", "What wines do you have?"],
+        "responses": ["Yes, here's our wine list.", "We have an extensive wine list including...", "Our wine options include..."]
+      },
+      {
+        "tag": "cuisine_type",
+        "patterns": ["What type of cuisine do you serve?", "What kind of food do you have?", "Cuisine options?", "Food type?"],
+        "responses": ["We serve a variety of cuisines including...", "Our menu features...", "We specialize in..."]
+      },
+      {
+        "tag": "kid_friendly",
+        "patterns": ["Is your restaurant kid-friendly?", "Do you have a kids menu?", "Kid options?", "Child-friendly dishes?"],
+        "responses": ["Yes, we have a kids menu.", "We offer several kid-friendly options including...", "Our restaurant is very kid-friendly."]
+      },
+      {
+        "tag": "parking",
+        "patterns": ["Is there parking available?", "Where can I park?", "Do you have parking?", "Parking options?"],
+        "responses": ["We have parking available at...", "You can park at...", "We offer parking for our customers."]
+      },
+      {
+        "tag": "happy_hour",
+        "patterns": ["Do you have happy hour?", "When is happy hour?", "Happy hour specials?", "Happy hour times?"],
+        "responses": ["Yes, our happy hour is from 4 PM to 6 PM.", "Happy hour is daily from 4 PM to 6 PM.", "Join us for happy hour specials from 4 PM to 6 PM."]
+      },
+      {
+        "tag": "events",
+        "patterns": ["Do you host events?", "Can I book an event?", "Event hosting?", "Private events?"],
+        "responses": ["Yes, we host events. Please contact us for more details.", "We can host private events, let us know your requirements.", "Book your event with us!"]
+      },
+      {
+        "tag": "catering",
+        "patterns": ["Do you offer catering?", "Can you cater for an event?", "Catering options?", "Catering service?"],
+        "responses": ["Yes, we offer catering services.", "We can cater for your event, please contact us.", "Our catering options include..."]
+      },
+      {
+        "tag": "live_music",
+        "patterns": ["Do you have live music?", "Any live performances?", "Live music schedule?", "Music events?"],
+        "responses": ["Yes, we have live music on...", "Our live music schedule includes...", "Enjoy live music on..."]
+      },
+      {
+        "tag": "wifi",
+        "patterns": ["Do you have free WiFi?", "Is there WiFi available?", "WiFi password?", "Can I get the WiFi?"],
+        "responses": ["Yes, we offer free WiFi. The password is...", "You can use our free WiFi, the password is...", "We have WiFi available for customers."]
+      },
+      {
+        "tag": "pet_friendly",
+        "patterns": ["Is your restaurant pet-friendly?", "Can I bring my dog?", "Pet policy?", "Pets allowed?"],
+        "responses": ["Yes, we are pet-friendly.", "You can bring your pet to our restaurant.", "We welcome pets."]
+      },
+      {
+        "tag": "private_dining",
+        "patterns": ["Do you have private dining?", "Can I book a private room?", "Private dining options?", "Private dining available?"],
+        "responses": ["Yes, we offer private dining.", "You can book a private room for your event.", "We have private dining options."]
+      },
+      {
+        "tag": "gift_cards",
+        "patterns": ["Do you sell gift cards?", "Can I buy a gift card?", "Gift card options?", "How to purchase gift cards?"],
+        "responses": ["Yes, we sell gift cards.", "You can purchase gift cards on our website.", "Gift cards are available for purchase."]
+      },
+      {
+        "tag": "contact_info",
+        "patterns": ["What's your contact information?", "How can I contact you?", "Phone number?", "Email address?"],
+        "responses": ["You can contact us at (555) 123-4567 or email us at info@restaurant.com.", "Our phone number is (555) 123-4567.", "You can reach us via email at info@restaurant.com."]
+      },
+      {
+        "tag": "chef_intro",
+        "patterns": ["Who is the chef?", "Tell me about the chef", "Chef's bio", "Chef information?"],
+        "responses": ["Our chef is...", "Our chef has extensive experience in...", "Meet our chef..."]
+      },
+      {
+        "tag": "cooking_classes",
+        "patterns": ["Do you offer cooking classes?", "Can I join a cooking class?", "Cooking class schedule?", "Cooking lessons available?"],
+        "responses": ["Yes, we offer cooking classes.", "You can join our cooking classes on...", "Our cooking class schedule is..."]
+      },
+      {
+        "tag": "seasonal_menu",
+        "patterns": ["Do you have a seasonal menu?", "What are your seasonal dishes?", "Seasonal specials?", "Seasonal menu options?"],
+        "responses": ["Yes, we have a seasonal menu featuring...", "Our seasonal dishes include...", "Check out our seasonal specials..."]
+      },
+      {
+        "tag": "order_online",
+        "patterns": ["Can I order online?", "Online ordering available?", "Order through your website?", "How to order online?"],
+        "responses": ["Yes, you can order online through our website.", "Online ordering is available on our site.", "You can place your order online."]
+      },
+      {
+        "tag": "loyalty_program",
+        "patterns": ["Do you have a loyalty program?", "Loyalty rewards?", "How to join the loyalty program?", "Loyalty program benefits?"],
+        "responses": ["Yes, we have a loyalty program.", "You can join our loyalty program and earn rewards.", "Our loyalty program offers benefits such as..."]
+      },
+      {
+        "tag": "job_openings",
+        "patterns": ["Are you hiring?", "Job openings?", "Can I apply for a job?", "Employment opportunities?"],
+        "responses": ["Yes, we are hiring. Please check our website for job openings.", "You can apply for a job on our website.", "We have employment opportunities available."]
+      },
+      {
+        "tag": "host_interview",
+        "patterns": ["Can I interview the chef?", "Host interview?", "Chef interview?", "Can I schedule an interview?"],
+        "responses": ["Yes, you can schedule an interview with the chef.", "Please contact us to arrange an interview.", "We can host an interview session."]
+      },
+      {
+        "tag": "community_events",
+        "patterns": ["Do you participate in community events?", "Community event schedule?", "How do I join community events?", "Community involvement?"],
+        "responses": ["Yes, we participate in community events.", "Our community event schedule is...", "You can join our community events by..."]
+      },
+      {
+        "tag": "sustainable_practices",
+        "patterns": ["Do you follow sustainable practices?", "Sustainability efforts?", "Eco-friendly?", "Green practices?"],
+        "responses": ["Yes, we follow sustainable practices.", "Our sustainability efforts include...", "We are committed to being eco-friendly."]
+      },
+      {
+        "tag": "ingredient_sources",
+        "patterns": ["Where do you source your ingredients?", "Ingredient sources?", "Are your ingredients local?", "Ingredient information?"],
+        "responses": ["We source our ingredients from...", "Our ingredients are locally sourced from...", "We use fresh ingredients from..."]
+      },
+      {
+        "tag": "beverage_pairing",
+        "patterns": ["Can you recommend a beverage pairing?", "Beverage pairings?", "Drink pairings?", "What drink goes with this dish?"],
+        "responses": ["We recommend pairing this dish with...", "A great beverage pairing for this is...", "Our suggested drink pairing is..."]
+      },
+      {
+        "tag": "table_service",
+        "patterns": ["Do you offer table service?", "Is there table service?", "Table service available?", "Do you serve at the table?"],
+        "responses": ["Yes, we offer table service.", "Our staff will serve you at your table.", "We provide full table service."]
+      },
+      {
+        "tag": "tasting_menu",
+        "patterns": ["Do you have a tasting menu?", "Tasting menu options?", "Can I see the tasting menu?", "Tasting menu available?"],
+        "responses": ["Yes, we have a tasting menu.", "Our tasting menu includes...", "You can enjoy our tasting menu featuring..."]
+      },
+      {
+        "tag": "chef_table",
+        "patterns": ["Do you have a chef's table?", "Chef's table experience?", "Can I book the chef's table?", "Chef's table availability?"],
+        "responses": ["Yes, we have a chef's table.", "You can book the chef's table for an exclusive experience.", "Our chef's table offers a unique dining experience."]
+      },
+      {
+        "tag": "food_philosophy",
+        "patterns": ["What is your food philosophy?", "Tell me about your food philosophy", "Restaurant philosophy?", "Culinary philosophy?"],
+        "responses": ["Our food philosophy is centered around...", "We believe in...", "Our culinary philosophy focuses on..."]
+      },
+      {
+        "tag": "social_media",
+        "patterns": ["Are you on social media?", "Social media links?", "Follow you on social media?", "Social media pages?"],
+        "responses": ["Yes, you can follow us on...", "Our social media links are...", "Follow us on our social media pages."]
+      },
+      {
+        "tag": "newsletter",
+        "patterns": ["Do you have a newsletter?", "Newsletter sign-up?", "Subscribe to newsletter?", "How to join your newsletter?"],
+        "responses": ["Yes, we have a newsletter.", "You can sign up for our newsletter on our website.", "Subscribe to our newsletter for updates."]
+      },
+      {
+        "tag": "chef_awards",
+        "patterns": ["Has the chef won any awards?", "Chef's awards?", "Award-winning chef?", "Chef accolades?"],
+        "responses": ["Yes, our chef has won several awards including...", "Our chef is award-winning and has been recognized for...", "Here are some of the awards our chef has received..."]
+      },
+      {
+        "tag": "restaurant_history",
+        "patterns": ["What's the history of the restaurant?", "Restaurant history?", "Tell me about the restaurant's history", "When was the restaurant founded?"],
+        "responses": ["Our restaurant was founded in...", "We have a rich history dating back to...", "Here's the story of our restaurant..."]
+      },
+      {
+        "tag": "family_style",
+        "patterns": ["Do you offer family-style dining?", "Family-style options?", "Family-style meals?", "Can we order family-style?"],
+        "responses": ["Yes, we offer family-style dining.", "Our family-style options include...", "You can enjoy our family-style meals."]
+      },
+      {
+        "tag": "nutrition_info",
+        "patterns": ["Do you provide nutrition information?", "Nutrition details?", "Nutritional facts?", "Can I get nutrition info?"],
+        "responses": ["Yes, we provide nutrition information for our dishes.", "Our nutritional details are available on request.", "You can find nutritional facts on our menu."]
+      },
+      {
+        "tag": "food_allergies",
+        "patterns": ["I have a food allergy", "Can you accommodate food allergies?", "Food allergy options?", "How do you handle food allergies?"],
+        "responses": ["We can accommodate food allergies, please let us know your requirements.", "Our staff will assist you with allergy-friendly options.", "We handle food allergies with care, please inform us of any allergies."]
+      },
+      {
+        "tag": "chef_experience",
+        "patterns": ["What is the chef's experience?", "Tell me about the chef's background", "Chef's experience?", "Chef's culinary background?"],
+        "responses": ["Our chef has extensive experience in...", "The chef's background includes...", "Here's more about the chef's culinary journey..."]
+      },
+      {
+        "tag": "food_pairing",
+        "patterns": ["Can you suggest a food pairing?", "Food pairings?", "What pairs well with this dish?", "Pairing suggestions?"],
+        "responses": ["We recommend pairing this dish with...", "A great pairing for this is...", "Our suggested pairing is..."]
+      },
+      {
+        "tag": "dietary_restrictions",
+        "patterns": ["Do you accommodate dietary restrictions?", "Dietary restriction options?", "Can you handle dietary restrictions?", "Dietary needs?"],
+        "responses": ["Yes, we can accommodate dietary restrictions.", "Please let us know your dietary needs.", "We offer options for various dietary restrictions."]
+      },
+      {
+        "tag": "chef_specialty",
+        "patterns": ["What is the chef's specialty?", "Chef's specialty dishes?", "Specialty dishes?", "What does the chef specialize in?"],
+        "responses": ["The chef specializes in...", "Our chef's specialty dishes include...", "The chef is known for..."]
+      },
+      {
+        "tag": "corporate_events",
+        "patterns": ["Do you host corporate events?", "Corporate event options?", "Can I book a corporate event?", "Corporate event hosting?"],
+        "responses": ["Yes, we host corporate events.", "You can book a corporate event with us.", "We offer options for corporate events."]
+      },
+      {
+        "tag": "chef_recommendation",
+        "patterns": ["What does the chef recommend?", "Chef's recommendation?", "Chef's pick?", "Recommended dishes?"],
+        "responses": ["The chef recommends...", "Our chef's pick for today is...", "We recommend trying..."]
+      },
+      {
+        "tag": "seasonal_ingredients",
+        "patterns": ["Do you use seasonal ingredients?", "Seasonal ingredient options?", "What seasonal ingredients do you use?", "Are your ingredients seasonal?"],
+        "responses": ["Yes, we use seasonal ingredients.", "Our seasonal ingredients include...", "We source fresh, seasonal ingredients."]
+      },
+      {
+        "tag": "farm_to_table",
+        "patterns": ["Do you follow a farm-to-table approach?", "Farm-to-table options?", "Farm-to-table dishes?", "What is your farm-to-table policy?"],
+        "responses": ["Yes, we follow a farm-to-table approach.", "Our farm-to-table dishes include...", "We prioritize fresh, farm-to-table ingredients."]
+      },
+      {
+        "tag": "chef_cooking_style",
+        "patterns": ["What is the chef's cooking style?", "Chef's cooking techniques?", "Cooking style of the chef?", "How does the chef cook?"],
+        "responses": ["The chef's cooking style is...", "Our chef uses techniques such as...", "The chef's approach to cooking includes..."]
+      },
+      {
+        "tag": "custom_dishes",
+        "patterns": ["Can you make custom dishes?", "Custom dish options?", "Customized meals?", "Can I request a custom dish?"],
+        "responses": ["Yes, we can create custom dishes.", "Let us know your preferences and we'll customize a dish for you.", "We offer customized meal options."]
+      },
+      {
+        "tag": "special_occasions",
+        "patterns": ["Do you cater to special occasions?", "Special occasion options?", "Can you host a special occasion?", "Special occasion services?"],
+        "responses": ["Yes, we cater to special occasions.", "We can host your special occasion.", "Our services include options for special occasions."]
+      },
+      {
+        "tag": "popular_dishes",
+        "patterns": ["What are your popular dishes?", "Most popular dishes?", "Top dishes?", "Customer favorites?"],
+        "responses": ["Our popular dishes include...", "The most popular items on our menu are...", "Customer favorites include..."]
+      },
+      {
+        "tag": "restaurant_story",
+        "patterns": ["What is the story behind the restaurant?", "Tell me the restaurant's story", "Restaurant background?", "How was the restaurant founded?"],
+        "responses": ["The story behind our restaurant is...", "Our restaurant was founded with the vision of...", "Here's how our restaurant came to be..."]
+      },
+      {
+        "tag": "chef_signature",
+        "patterns": ["What is the chef's signature dish?", "Chef's signature?", "Signature dishes?", "What is the chef known for?"],
+        "responses": ["The chef's signature dish is...", "Our chef is known for...", "The chef's signature dishes include..."]
+      },
+      {
+        "tag": "reservation_policy",
+        "patterns": ["What is your reservation policy?", "Reservation rules?", "How do reservations work?", "Reservation guidelines?"],
+        "responses": ["Our reservation policy is...", "Here are our reservation guidelines...", "Reservations work as follows..."]
+      },
+      {
+        "tag": "family_dining",
+        "patterns": ["Do you offer family dining?", "Family dining options?", "Family meal options?", "Can we dine as a family?"],
+        "responses": ["Yes, we offer family dining.", "Our family dining options include...", "You can enjoy family meals with us."]
+      },
+      {
+        "tag": "cheese_selection",
+        "patterns": ["What cheeses do you offer?", "Cheese selection?", "Types of cheese?", "Cheese options?"],
+        "responses": ["We offer a variety of cheeses including...", "Our cheese selection features...", "You can choose from our cheese options..."]
+      },
+      {
+        "tag": "food_origin",
+        "patterns": ["Where does your food come from?", "Food origin?", "Food sourcing?", "Where are your ingredients from?"],
+        "responses": ["Our food comes from...", "We source our ingredients from...", "The origin of our food is..."]
+      },
+      {
+        "tag": "order_cancellation",
+        "patterns": ["How can I cancel my order?", "Order cancellation policy?", "Can I cancel my order?", "Cancel my order?"],
+        "responses": ["You can cancel your order by...", "Our order cancellation policy is...", "To cancel your order, please..."]
+      },
+      {
+        "tag": "order_tracking",
+        "patterns": ["Can I track my order?", "Order tracking?", "How do I track my order?", "Track my order?"],
+        "responses": ["Yes, you can track your order through our website.", "Order tracking is available via...", "You can monitor your order status by..."]
+      },
+      {
+        "tag": "wait_time",
+        "patterns": ["How long is the wait time?", "Wait time?", "Current wait time?", "How long will I wait?"],
+        "responses": ["The current wait time is...", "Our usual wait time is...", "You can expect a wait time of..."]
+      },
+      {
+        "tag": "seasonal_specials",
+        "patterns": ["Do you have seasonal specials?", "Seasonal special options?", "What's special this season?", "Seasonal promotions?"],
+        "responses": ["Yes, we have seasonal specials.", "Our seasonal special options include...", "This season's specials are..."]
+      },
+      {
+        "tag": "weekly_specials",
+        "patterns": ["Do you have weekly specials?", "Weekly special options?", "What's special this week?", "Weekly promotions?"],
+        "responses": ["Yes, we have weekly specials.", "Our weekly special options include...", "This week's specials are..."]
+      },
+      {
+        "tag": "customer_service",
+        "patterns": ["How is your customer service?", "Customer service quality?", "Customer service options?", "Customer service details?"],
+        "responses": ["Our customer service is focused on...", "We prioritize excellent customer service.", "Our customer service includes..."]
+      },
+      {
+        "tag": "seasonal_events",
+        "patterns": ["Do you have seasonal events?", "Seasonal event schedule?", "What's happening this season?", "Seasonal activities?"],
+        "responses": ["Yes, we have seasonal events.", "Our seasonal event schedule includes...", "This season's events are..."]
+      },
+      {
+        "tag": "reservation_confirmation",
+        "patterns": ["How do I confirm my reservation?", "Reservation confirmation?", "Confirm my reservation?", "Reservation status?"],
+        "responses": ["You can confirm your reservation by...", "To confirm your reservation, please...", "Reservation status can be checked by..."]
+      },
+      {
+        "tag": "lost_items",
+        "patterns": ["I lost an item", "Lost and found?", "Do you have a lost and found?", "Can I retrieve my lost item?"],
+        "responses": ["Please contact us about lost items.", "Our lost and found policy is...", "You can retrieve lost items by..."]
+      },
+      {
+        "tag": "special_requests",
+        "patterns": ["Can I make a special request?", "Special request options?", "Do you accommodate special requests?", "How do I make a special request?"],
+        "responses": ["Yes, we accommodate special requests.", "Please let us know your special request.", "We will do our best to meet your special needs."]
+      }
+    ]
+}
+  
